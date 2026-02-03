@@ -1,13 +1,17 @@
 function EducationPreview({ education }) {
-    const { school, years, major } = education;
+    const { school, start, end, major } = education;
 
     return (
         <section className="education-preview">
             <h1>{school || "School Name"}</h1>
 
-        <div className="contact-info">
-            {years && <span>{years}</span>}
-            {major && <span>{major}</span>}
+        <div className="years-attended">
+            {start && <span>{start}</span>}
+            {end && <span>{end}</span>}
+        </div>
+
+        <div className="major">
+            <h3>{major || "Major"}</h3>
         </div>
         </section>
     );

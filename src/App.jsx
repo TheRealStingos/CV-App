@@ -3,6 +3,8 @@ import InformationForm from "./components/InformationForm";
 import InformationPreview from "./components/InformationPreview";
 import EducationForm from "./components/EducationForm";
 import EducationPreview from "./components/EducationPreview";
+import ExperienceForm from "./components/ExperienceForm";
+import ExperiencePreview from "./components/ExperiencePreview";
 
 function App() {
   const [information, setInformation] = useState({

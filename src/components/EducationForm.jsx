@@ -20,11 +20,20 @@ function EducationForm({education, setEducation}) {
             />
         </label>
         <label>
-            Years Attended
+            Start Date
             <input
-                type="date"
-                name="years"
-                value={education.years}
+                type="month"
+                name="start"
+                value={education.start}
+                onChange={handleChange}
+            />
+        </label>
+         <label>
+            Graduation Date
+            <input
+                type="month"
+                name="end"
+                value={education.end}
                 onChange={handleChange}
             />
         </label>
