@@ -1,4 +1,4 @@
-function InformationForm({ general, setInformation }) {
+function InformationForm({ information, setInformation }) {
   function handleChange(e) {
     const { name, value } = e.target;
 
@@ -17,7 +17,7 @@ function InformationForm({ general, setInformation }) {
         <input
           type="text"
           name="fullName"
-          value={general.fullName}
+          value={information.fullName}
           onChange={handleChange}
         />
       </label>
@@ -27,7 +27,7 @@ function InformationForm({ general, setInformation }) {
         <input
           type="email"
           name="email"
-          value={general.email}
+          value={information.email}
           onChange={handleChange}
         />
       </label>
@@ -37,7 +37,7 @@ function InformationForm({ general, setInformation }) {
         <input
           type="tel"
           name="phone"
-          value={general.phone}
+          value={information.phone}
           onChange={handleChange}
         />
       </label>

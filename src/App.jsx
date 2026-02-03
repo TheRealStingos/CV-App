@@ -1,6 +1,8 @@
 import { useState } from "react";
 import InformationForm from "./components/InformationForm";
 import InformationPreview from "./components/InformationPreview";
+import EducationForm from "./components/EducationForm";
+import EducationPreview from "./components/EducationPreview";
 
 function App() {
   const [information, setInformation] = useState({
