@@ -2,10 +2,10 @@ function ExperienceForm({ experience, setExperience }) {
     function handleChange(e) {
         const { name, value } = e.target;
 
-        setExperience (prev => ({
-            ...prev,
+        setExperience({
+            ...experience,
             [name]: value
-        }));
+        });
     }
 
     return (
@@ -25,7 +25,7 @@ function ExperienceForm({ experience, setExperience }) {
             <label>
                 Date Employed
                 <input
-                type="month"
+                type="date"
                 name="dateEmployed"
                 value={experience.dateEmployed}
                 onChange={handleChange}

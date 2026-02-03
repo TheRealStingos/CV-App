@@ -2,20 +2,17 @@ function InformationForm({ information, setInformation }) {
   function handleChange(e) {
     const { name, value } = e.target;
 
-    setInformation(prev => ({
-      ...prev,
+    setInformation({
+      ...information,
       [name]: value,
-    }));
+    });
   }
 
   return (
     <section>
-      <h2>General Information</h2>
-
       <label>
         Full Name
         <input
-          type="text"
           name="fullName"
           value={information.fullName}
           onChange={handleChange}
@@ -25,7 +22,6 @@ function InformationForm({ information, setInformation }) {
       <label>
         Email
         <input
-          type="email"
           name="email"
           value={information.email}
           onChange={handleChange}
@@ -35,7 +31,6 @@ function InformationForm({ information, setInformation }) {
       <label>
         Phone
         <input
-          type="tel"
           name="phone"
           value={information.phone}
           onChange={handleChange}

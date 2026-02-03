@@ -2,10 +2,10 @@ function EducationForm({education, setEducation}) {
     function handleChange(e) {
         const { name, value } = e.target;
         
-        setEducation (prev => ({
-            ...prev,
+        setEducation ({
+            ...education,
             [name]: value,
-        }));
+        });
     }
     return (
     <section>
@@ -22,7 +22,7 @@ function EducationForm({education, setEducation}) {
         <label>
             Start Date
             <input
-                type="month"
+                type="date"
                 name="start"
                 value={education.start}
                 onChange={handleChange}
@@ -31,7 +31,7 @@ function EducationForm({education, setEducation}) {
          <label>
             Graduation Date
             <input
-                type="month"
+                type="date"
                 name="end"
                 value={education.end}
                 onChange={handleChange}
