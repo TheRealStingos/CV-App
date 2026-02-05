@@ -40,7 +40,7 @@ function ExperienceForm({ experience, setExperience }) {
                 value={experience.jobDesc}
                 onChange={handleChange}
                 />
-            /</label>
+            </label>
         </section>
     )
 }
