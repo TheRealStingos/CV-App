@@ -4,10 +4,9 @@ function InformationPreview({ information }) {
   return (
     <section className="information-preview">
       <h1>{fullName || "Your Name"}</h1>
-
       <div className="contact-info">
-        {email && <span>{email}</span>}
-        {phone && <span>{phone}</span>}
+        {<span>{email ? email : "email@example.com"}</span>}
+        {<span>{phone ? phone : "123-555-5555"}</span>}
       </div>
     </section>
   );

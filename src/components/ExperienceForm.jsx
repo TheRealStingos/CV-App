@@ -9,7 +9,7 @@ function ExperienceForm({ experience, setExperience }) {
     }
 
     return (
-        <section>
+        <section className="form">
             <h2>Work Experience</h2>
 
             <label>

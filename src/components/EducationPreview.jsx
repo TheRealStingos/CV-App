@@ -3,16 +3,22 @@ function EducationPreview({ education }) {
 
     return (
         <section className="education-preview">
-            <h1>{school || "School Name"}</h1>
+            <div className="section-row">
+                <h1 className="section-header">Education</h1>
+                <div className="years-attended">
+                    {start && <span>{start}</span>}
+                    {start && end && <span className="date-separator"> - </span>}
+                    {end && <span>{end}</span>}
+                </div>
+            </div>
 
-        <div className="years-attended">
-            {start && <span>{start}</span>}
-            {end && <span>{end}</span>}
-        </div>
-
-        <div className="major">
-            <h3>{major || "Major"}</h3>
-        </div>
+            <div className="education-header">
+                <h2>
+                    {school || "School Name"}
+                    {major && <span className="separator"> | </span>}
+                    {major || "Major"}
+                </h2>
+                </div>
         </section>
     );
 }

@@ -8,7 +8,7 @@ function EducationForm({education, setEducation}) {
         });
     }
     return (
-    <section>
+    <section className="form">
         <h2>Education</h2>
         <label>
             School Name
@@ -16,6 +16,15 @@ function EducationForm({education, setEducation}) {
                 type="text"
                 name="school"
                 value={education.school}
+                onChange={handleChange}
+            />
+        </label>
+         <label>
+            Major
+            <input
+                type="text"
+                name="major"
+                value={education.major}
                 onChange={handleChange}
             />
         </label>
@@ -29,20 +38,11 @@ function EducationForm({education, setEducation}) {
             />
         </label>
          <label>
-            Graduation Date
+            Graduation Date 
             <input
                 type="date"
                 name="end"
                 value={education.end}
-                onChange={handleChange}
-            />
-        </label>
-        <label>
-            Major
-            <input
-                type="text"
-                name="major"
-                value={education.major}
                 onChange={handleChange}
             />
         </label>

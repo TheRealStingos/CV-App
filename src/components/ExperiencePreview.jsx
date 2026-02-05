@@ -3,7 +3,8 @@ function ExperiencePreview({ experience }) {
 
     return (
         <section className="experience-preview">
-            <h1>{jobName || "Employer"}</h1>
+            <h1 className="section-header">Experience</h1>
+            <h2>{jobName || "Employer"}</h2>
 
             <h3>{dateEmployed || "Date Employed"}</h3>
 

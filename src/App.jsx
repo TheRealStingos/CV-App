@@ -5,6 +5,7 @@ import EducationForm from "./components/EducationForm";
 import EducationPreview from "./components/EducationPreview";
 import ExperienceForm from "./components/ExperienceForm";
 import ExperiencePreview from "./components/ExperiencePreview";
+import "./app.css";
 
 function App() {
   const [cv, setCV] = useState({
@@ -58,9 +59,11 @@ function App() {
       </section>
 
       <section className="preview">
-        <InformationPreview information={cv.information} />
-        <EducationPreview education={cv.education} />
-        <ExperiencePreview experience={cv.experience} />
+        <div>
+          <InformationPreview information={cv.information} />
+          <EducationPreview education={cv.education} />
+          <ExperiencePreview experience={cv.experience} />
+        </div>
       </section>
     </main>
   );
