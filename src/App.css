@@ -1,5 +1,37 @@
 .app {
-    display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 100vh;
+}
+
+.editor,
+.preview {
+  padding: 1.5rem;
+  overflow-y: auto;
+}
+
+.cv {
+  width: 100%;
+  max-width: 800px;
+  background: white;
+  padding: 2.5rem;
+}
+
+.editor {
+  padding: 2rem;
+  overflow-y: auto;
+  background-color: gray;
+  max-width: 300px;
+  justify-content: center;
+}
+
+.editor section {
+  margin-bottom: 1.5rem;
+}
+
+.editor input,
+.editor textarea {
+  max-width: 500px;
 }
 
 .preview {
@@ -14,6 +46,7 @@
 
 .form {
     background-color: gray;
+    border-radius: 5px;
 }
 
 .information-preview {
