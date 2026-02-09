@@ -70,3 +70,11 @@ h1, h2, h3 {
     margin: 0;
 }
 
+.experience-preview > .section-row > h2, .job-section > h3 {
+    font-size: 16px;
+    margin-top: 5px;
+}
+
+.job-desc {
+    margin: 0
+}

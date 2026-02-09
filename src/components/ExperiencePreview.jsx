@@ -1,14 +1,17 @@
 function ExperiencePreview({ experience }) {
-    const { jobName, dateEmployed, jobDesc } = experience;
+    const { employer, dateEmployed, jobTitle, jobDesc } = experience;
 
     return (
         <section className="experience-preview">
             <h1 className="section-header">Experience</h1>
-            <h2>{jobName || "Employer"}</h2>
+            <div className="section-row">
+                <h2>{employer || "Employer"}</h2>
 
-            <h3>{dateEmployed || "Date Employed"}</h3>
+                <h3>{dateEmployed || "Date Employed"}</h3>
+            </div>
 
-            <div>
+            <div className="job-section">
+                <h3>{jobTitle || "Job Title"}</h3>
                 <p className="job-desc">
                     {jobDesc || "Job Description"}
                 </p>

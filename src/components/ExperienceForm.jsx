@@ -13,11 +13,11 @@ function ExperienceForm({ experience, setExperience }) {
             <h2>Work Experience</h2>
 
             <label>
-                Job Name
+                Employer
                 <input
                 type="text"
-                name="jobName"
-                value={experience.jobName}
+                name="employer"
+                value={experience.employer}
                 onChange={handleChange}
                 />
             </label>
@@ -28,6 +28,16 @@ function ExperienceForm({ experience, setExperience }) {
                 type="date"
                 name="dateEmployed"
                 value={experience.dateEmployed}
+                onChange={handleChange}
+                />
+            </label>
+
+            <label>
+                Job Title
+                <input
+                type="text"
+                name="jobTitle"
+                value={experience.jobTitle}
                 onChange={handleChange}
                 />
             </label>
