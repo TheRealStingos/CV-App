@@ -5,7 +5,7 @@ import EducationForm from "./components/EducationForm";
 import EducationPreview from "./components/EducationPreview";
 import ExperienceForm from "./components/ExperienceForm";
 import ExperiencePreview from "./components/ExperiencePreview";
-import "./app.css";
+import "./App.css";
 
 function App() {
   const [cv, setCV] = useState({
